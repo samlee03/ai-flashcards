@@ -36,16 +36,23 @@
     opacity: 0.7;
 }
 
-.new-flashcard-button {
-    display: block;
+.link-container {
+    display: flex;
+    justify-content: center;
     margin: 45px auto;
+}
 
+.new-flashcard-button {
     border: 1px solid;
-    border-radius: 5px;;
+    border-radius: 5px;
 
     padding: 10px 24px;
     font-size: 15px;
-    font-family:'Times New Roman';
+    font-family: 'Times New Roman', serif;
+
+    text-decoration: none;
+    background-color: lightgray;
+    color: black;
 
     cursor: pointer;
     transition: background-color 0.5s ease;
