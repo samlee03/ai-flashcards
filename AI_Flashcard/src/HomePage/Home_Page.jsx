@@ -46,19 +46,25 @@ function Home_Page(){
             <>
                 {/* <button className = "File-Button">Submit A File</button> */}
                 <label htmlFor="file-upload" className="File-Button">
-                    Submit Upload File
+                    Upload Existing File
                 </label>
                 <input id="file-upload" type="file" style={{ display: 'none' }} onChange={e => {
                     const selectedFile = e.target.files[0];
                     handleSubmitFile(selectedFile);
                 }} />
-
+                
+                <div className='or-separator'> OR</div>
 
                 <div className = "Text-Container">
-                    <textarea className = "Text-Input" placeholder = "Enter a text or generate something new" rows = "10" value={userInput} onChange={e => setUserInput(e.target.value)}/>
+                    <textarea className = "Text-Input" placeholder = "Generate an idea.. (i.e. Chinese 101 Words)" rows = "4" value={userInput} onChange={e => setUserInput(e.target.value)}  onKeyDown={e => {
+                    if (e.key === 'Enter' && !e.shiftKey) {
+                        e.preventDefault();
+                        handleSubmitText();
+                    }
+                    }}/>
                 </div>
 
-                <button className = "Enter-Button" onClick={handleSubmitText}>Enter</button>
+                {/* <button className = "Enter-Button" onClick={handleSubmitText}>Enter</button> */}
             </>
         :   <>
                     <div className='fetching-content'>

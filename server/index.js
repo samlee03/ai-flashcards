@@ -11,12 +11,7 @@ console.log(process.env.GENAI_API_KEY)
 const app = express();
 app.use("/", express.static("public"));
 app.use(express.json()); 
-app.use(cors({
-    origin: 'http://localhost:5173/', // Only allow requests from this origin
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true, // Allow sending cookies across origins (if needed)
-    allowedHeaders: 'Content-Type,Authorization',
-  }));
+app.use(cors());
 
 app.use(fileUpload())
 
