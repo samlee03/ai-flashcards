@@ -1,0 +1,51 @@
+
+.File-Button{
+    display: block;
+    margin: 70px auto;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d9d9d9;
+
+    padding: 10px 30px;
+    font-family: Helvetica, Arial;
+    
+    transition: background-color 0.5s ease;
+}
+
+.File-Button:hover {
+    background-color: rgb(131, 128, 128);
+}
+
+.Text-Input {
+    border: 2px solid;
+    border-radius: 8px;
+    resize: none;
+    overflow: scroll;
+
+    width: 98.5%;
+    padding: 10px;
+
+    font-size: 14px;
+    font-family: "sans-serif", "Arial";
+}
+
+.Enter-Button{
+    display: block;
+    margin: 10px auto;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d9d9d9;
+
+    padding: 10px 30px;
+    font-family: Geneva, "sans-serif";
+
+    transition: background-color 0.5s ease;
+}
+
+.Enter-Button:hover {
+    background-color: rgb(102, 88, 88);
+}

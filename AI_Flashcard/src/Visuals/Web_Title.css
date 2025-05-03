@@ -1,14 +1,17 @@
-body {
-    display: flex;
-    justify-content: center;
-}
+
 
 .Title-Container {
-    background-color: lightgray;
+    background-color: #dcd2d2de;
 
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 0 4px 8px;
 }
 
 .Title {
     font-size: 2.5rem;
-    padding: 50px;
+    font-family: sans-serif, Arial;
+
+    text-shadow: 1px 2px;
 }
