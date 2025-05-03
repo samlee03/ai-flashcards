@@ -16,8 +16,20 @@
     font-family: serif, Arial;
 }
 
-.term {
+.Term-Table {
     font-weight: bold;
     border-right: 1px solid;
+    width: 200px;
+}
+
+.Definition-Table {
+    width: 550px;
+}
+
+.Term-Table, .Definition-Table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
