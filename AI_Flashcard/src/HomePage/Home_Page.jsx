@@ -4,11 +4,10 @@ import Web_Title from "./Web_Title";
 
 function Home_Page(){
 
-
     return(
     <div>
         <Web_Title/>
-        
+
         <button className = "File-Button">Submit A File</button>
 
         <div className = "Text-Container">

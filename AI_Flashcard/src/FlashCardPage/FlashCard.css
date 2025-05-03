@@ -1,0 +1,38 @@
+
+
+.flash-card-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.flash-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 650px;
+    height: 300px;
+    padding: 30px;
+
+    background-color: rgb(157, 144, 144);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+
+    font-family: Helvetica;
+}
+
+.term {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.defintion {
+    font-size: 20px;
+
+    flex: 1;
+    padding: 45px;
+    text-align: center;
+
+}

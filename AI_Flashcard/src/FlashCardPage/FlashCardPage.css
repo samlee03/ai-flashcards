@@ -1,0 +1,61 @@
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 200px;
+}
+
+.left-arrow {
+    background-image: url('/Images/left_arrow.png');
+}
+
+.right-arrow {
+    background-image: url('/Images/right_arrow.png');
+}
+
+.left-arrow, .right-arrow {
+    width: 75px;
+    height: 50px;
+
+    border: none;
+    border-radius: 25px;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    box-shadow: 0 4px 8px;
+
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    opacity: 0.7;
+}
+
+.new-flashcard-button {
+    display: block;
+    margin: 45px auto;
+
+    border: 1px solid;
+    border-radius: 5px;;
+
+    padding: 10px 24px;
+    font-size: 15px;
+    font-family:'Times New Roman';
+
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.new-flashcard-button:hover {
+    background-color: rgb(176, 61, 61);
+}
+
+.Key-Term-Container {
+    display: flex;
+    justify-content: center;
+}
