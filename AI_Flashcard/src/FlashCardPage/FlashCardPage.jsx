@@ -3,6 +3,7 @@ import "./FlashCardPage.css"
 import Web_Title from "../HomePage/Web_Title"
 import FlashCard from "./FlashCard.jsx"
 import KeyTerm from "./KeyTerm.jsx"
+import { Link } from "react-router-dom"
 
 function FlashCardPage(){
     return(
@@ -15,7 +16,7 @@ function FlashCardPage(){
                 <button className = "right-arrow"/>
             </div>
 
-            <button className = "new-flashcard-button">Create New Flashcards</button>
+            <Link to={"/"} className = "new-flashcard-button">Create New Flashcards</Link>
 
             <div className = "Key-Term-Container">
                 <KeyTerm></KeyTerm>
