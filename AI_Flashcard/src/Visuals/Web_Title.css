@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.Title-Container {
+    background-color: lightgray;
+
+}
+
+.Title {
+    font-size: 2.5rem;
+    padding: 50px;
+}
