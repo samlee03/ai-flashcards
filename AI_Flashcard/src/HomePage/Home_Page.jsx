@@ -13,7 +13,7 @@ function Home_Page(){
         const formData = new FormData();
         formData.append("file", selectedFile);
         try {
-            const response = await fetch('http://localhost:5000/api/generate-by-file', {
+            const response = await fetch('http://localhost:3000/api/generate-by-file', {
               method: "POST",
               body: formData
             });
@@ -30,7 +30,7 @@ function Home_Page(){
     };
     const handleSubmitText = async () => {
         setIsFetching(true)
-        const response = await fetch('http://localhost:5000/api/generate-by-topic', {
+        const response = await fetch('http://localhost:3000/api/generate-by-topic', {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({ topic: userInput })

@@ -6,17 +6,23 @@ const pdfParse = require('pdf-parse');
 const { GoogleGenAI } = require("@google/genai");
 
 dotenv.config();
+console.log(process.env.GENAI_API_KEY)
 
 const app = express();
 app.use("/", express.static("public"));
 app.use(express.json()); 
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:5173/', // Only allow requests from this origin
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // Allow sending cookies across origins (if needed)
+    allowedHeaders: 'Content-Type,Authorization',
+  }));
 
 app.use(fileUpload())
 
 
 const ai = new GoogleGenAI({ apiKey: process.env.GENAI_API_KEY });
-const port = 5000;
+const port = 3000;
 
 
 app.get('/', (req, res) => {

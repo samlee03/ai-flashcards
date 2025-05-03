@@ -18,5 +18,8 @@
     "express-fileupload": "^1.5.1",
     "nodemon": "^3.1.10",
     "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "vite": "^6.3.4"
   }
 }
