@@ -6,8 +6,8 @@ function KeyTerm({term, definition}){
 
     return(
         <div className = "KeyTerm">
-                <div className = "Term-Table">{term}</div>
-                <div className = "Definition-Table">{definition}</div>
+            <div className = "Term-Table">{term}</div>
+            <div className = "Definition-Table">{definition}</div>
         </div>
     )
 }

@@ -5,11 +5,12 @@ import FlashCard from "./FlashCard.jsx"
 import KeyTerm from "./KeyTerm.jsx"
 import { Link, useLocation } from "react-router-dom"
 
-import {useState} from "react"
+import {useState, useEffect} from "react"
 
 function FlashCardPage(){
     const location = useLocation();
     const data = location.state?.data
+    
     // const data = [
     //     {
     //         "term": "Iron Man",
@@ -43,7 +44,6 @@ function FlashCardPage(){
 
 
     const [currIdx, setCurrIdx] = useState(0);
-
     const decrementIndex = () => {
         setCurrIdx((currIdx === 0) ? 0 : currIdx - 1);
     };

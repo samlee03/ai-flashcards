@@ -9,7 +9,8 @@
 
 .flash-card {
     width: 650px;
-    height: 300px;
+    width: 800px;
+    height: 400px;
     padding: 30px;
 
     cursor: pointer;
@@ -41,9 +42,12 @@
     align-items: center;
     justify-content: center;
 
-    background-color: rgb(157, 144, 144);
+    /* background-color: rgb(157, 144, 144); */
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    box-shadow: 0 4px 8px;
+    /* box-shadow: 0 4px 8px; */
+    border: 3px solid rgb(234, 234, 234);
+    /* box-shadow: rgb(255, 255, 255) 0 4px 8px; */
 
     font-family: Helvetica;
 }
