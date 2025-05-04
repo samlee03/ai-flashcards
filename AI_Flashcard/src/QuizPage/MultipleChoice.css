@@ -29,3 +29,13 @@
 #choice4 {
     border-bottom-right-radius: 8px;
 }
+
+.Choice-Definition.correct {
+    background-color: #c8f7c5;
+    border: 2px solid #2ecc71;
+}
+
+.Choice-Definition.incorrect {
+    background-color: #f9c0c0; 
+    border: 2px solid #e74c3c;
+}
