@@ -67,6 +67,7 @@ function FlashCardPage(){
 
             <div className = "link-container">
                 <Link to={"/"} className = "new-flashcard-button">Create New Flashcards</Link>
+                <button className = "quiz-button">Test YourSelf</button>
             </div>
 
             <div className = "Key-Term-Container">
