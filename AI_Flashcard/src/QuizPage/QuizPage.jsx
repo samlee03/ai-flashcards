@@ -1,10 +1,13 @@
 
 import "./QuizPage.css"
 import MultipleChoice from "./MultipleChoice";
-import Web_Title from "../HomePage/Web_Title"
-
+import Web_Title from "../HomePage/Web_Title";
+import { Link, useLocation } from "react-router-dom";
 
 function QuizPage({data}){
+    const location = useLocation();
+    // const data = location.state?.data || [];
+
     function shuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -40,7 +43,7 @@ function QuizPage({data}){
             </div>
 
             <div className = "Quiz-Buttons">
-                <button className = "Return-Button">Return</button>
+                <Link to="/flashcard" className = "Return-Button">Return</Link>
                 <button className = "Retry-Button">Retry</button>
             </div>
         </div>

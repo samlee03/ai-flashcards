@@ -34,6 +34,9 @@
     border: 1px solid;
     border-radius: 5px;
 
+    text-decoration: none;
+    color: black;
+
     cursor: pointer;
     transition: background-color 0.5s ease;
 }

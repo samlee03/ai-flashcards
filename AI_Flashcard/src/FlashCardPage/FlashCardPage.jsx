@@ -9,38 +9,38 @@ import {useState, useEffect} from "react"
 
 function FlashCardPage(){
     const location = useLocation();
-    const data = location.state?.data
+    // const data = location.state?.data
     
-    // const data = [
-    //     {
-    //         "term": "Iron Man",
-    //         "definition": "A genius inventor who uses his armored suits for heroic deeds."
-    //     },
-    //     {
-    //         "term": "Captain America",
-    //         "definition": "A super soldier and symbol of freedom from World War II."
-    //     },
-    //     {
-    //         "term": "Thor",
-    //         "definition": "The Asgardian god of thunder and protector of Earth."
-    //     },
-    //     {
-    //         "term": "Hulk",
-    //         "definition": "A scientist transformed into a powerful, rage-fueled monster."
-    //     },
-    //     {
-    //         "term": "Spider-Man",
-    //         "definition": "A teenager granted spider-like abilities after being bitten by a radioactive spider."
-    //     },
-    //     {
-    //         "term": "Black Widow",
-    //         "definition": "A highly trained spy and assassin with no superpowers."
-    //     },
-    //     {
-    //         "term": "Wakanda",
-    //         "definition": "A technologically advanced African nation hidden from the world."
-    //     }
-    // ];
+    const data = [
+        {
+            "term": "Iron Man",
+            "definition": "A genius inventor who uses his armored suits for heroic deeds."
+        },
+        {
+            "term": "Captain America",
+            "definition": "A super soldier and symbol of freedom from World War II."
+        },
+        {
+            "term": "Thor",
+            "definition": "The Asgardian god of thunder and protector of Earth."
+        },
+        {
+            "term": "Hulk",
+            "definition": "A scientist transformed into a powerful, rage-fueled monster."
+        },
+        {
+            "term": "Spider-Man",
+            "definition": "A teenager granted spider-like abilities after being bitten by a radioactive spider."
+        },
+        {
+            "term": "Black Widow",
+            "definition": "A highly trained spy and assassin with no superpowers."
+        },
+        {
+            "term": "Wakanda",
+            "definition": "A technologically advanced African nation hidden from the world."
+        }
+    ];
 
 
     const [currIdx, setCurrIdx] = useState(0);
@@ -67,7 +67,7 @@ function FlashCardPage(){
 
             <div className = "link-container">
                 <Link to={"/"} className = "new-flashcard-button">Create New Flashcards</Link>
-                <button className = "quiz-button">Test YourSelf</button>
+                <Link to={"/quizpage"} className = "quiz-button" state = {{data}}>Test Yourself</Link>
             </div>
 
             <div className = "Key-Term-Container">

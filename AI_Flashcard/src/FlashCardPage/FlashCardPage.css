@@ -42,13 +42,14 @@
     margin: 45px auto;
 }
 
-.new-flashcard-button {
+.new-flashcard-button, .quiz-button {
     border: 1px solid;
     border-radius: 5px;
 
     padding: 10px 24px;
     font-size: 15px;
     font-family: 'Times New Roman', serif;
+    margin: auto 20px;
 
     text-decoration: none;
     background-color: lightgray;
@@ -58,7 +59,8 @@
     transition: background-color 0.5s ease;
 }
 
-.new-flashcard-button:hover {
+.new-flashcard-button:hover,
+.quiz-button:hover {
     background-color: rgb(176, 61, 61);
 }
 
