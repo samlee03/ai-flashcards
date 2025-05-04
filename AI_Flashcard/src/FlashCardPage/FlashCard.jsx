@@ -1,9 +1,10 @@
 
 import "./FlashCard.css"
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 
-function FlashCard(){
+function FlashCard({term, definition}){
     const [showDefinition, setShowDefinition] = useState(false);
 
     const handleFlashCardClick = () => {
@@ -19,11 +20,11 @@ function FlashCard(){
                 <div className = "flash-card-flip">
 
                     <div className = "Term-Side">
-                        <div className = "term">Some Term</div>
+                        <div className = "term"> {term} </div>
                     </div>
 
                     <div className = "Definition-Side"> 
-                        <div className = "definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus harum mollitia, quo est fugit incidunt atque, cupiditate qui nisi quia itaque nulla asperiores architecto hic commodi! Rem ullam totam officiis?</div>
+                        <div className = "definition"> {definition} </div>
                     </div>
 
                 </div>
@@ -31,6 +32,16 @@ function FlashCard(){
             </div>
         </div>
     );
+}
+
+FlashCard.PropTypes = {
+    term: PropTypes.string,
+    definition: PropTypes.number
+}
+
+FlashCard.defaultProps = {
+    term: "Unable to get term",
+    definition: "Unable to get definition"
 }
 
 export default FlashCard

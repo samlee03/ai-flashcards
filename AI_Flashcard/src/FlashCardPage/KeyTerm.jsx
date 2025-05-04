@@ -1,14 +1,25 @@
 
 import "./KeyTerm.css"
+import PropTypes from "prop-types"
 
-function KeyTerm(){
+function KeyTerm({term, definition}){
 
     return(
         <div className = "KeyTerm">
-            <div className = "Term-Table">Term</div>
-            <div className = "Definition-Table">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias suscipit adipisci odit! Autem obcaecati quas magnam aliquid, incidunt est quos corporis neque sit ullam alias aut, laboriosam, cum tempora distinctio?</div>
+                <div className = "Term-Table">{term}</div>
+                <div className = "Definition-Table">{definition}</div>
         </div>
     )
+}
+
+KeyTerm.PropTypes = {
+    term: PropTypes.string,
+    definition: PropTypes.number
+}
+
+KeyTerm.defaultProps = {
+    term: "Unable to get term",
+    definition: "Unable to get definition"
 }
 
 export default KeyTerm
