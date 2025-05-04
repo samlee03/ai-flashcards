@@ -10,13 +10,13 @@ body{
     gap: 200px;
 }
 
-.left-arrow {
+/* .left-arrow {
     background-image: url('/Images/left_arrow.png');
 }
 
 .right-arrow {
     background-image: url('/Images/right_arrow.png');
-}
+} */
 
 .left-arrow, .right-arrow {
     width: 75px;

@@ -4,6 +4,9 @@ import Web_Title from "../HomePage/Web_Title"
 import FlashCard from "./FlashCard.jsx"
 import KeyTerm from "./KeyTerm.jsx"
 import { Link, useLocation } from "react-router-dom"
+import leftArrow from '/src/assets/left_arrow.png';
+import rightArrow from '/src/assets/right_arrow.png';
+
 
 import {useState, useEffect} from "react"
 
@@ -29,8 +32,8 @@ function FlashCardPage(){
             <FlashCard term = {data[currIdx].term} definition = {data[currIdx].definition}/>
 
             <div className = "arrow-container">
-                <button className = "left-arrow" onClick = {decrementIndex}/>
-                <button className = "right-arrow" onClick = {incrementIndex}/>
+                <button className = "left-arrow" style={{ backgroundImage: `url(${leftArrow})` }} onClick = {decrementIndex}/>
+                <button className = "right-arrow" style={{ backgroundImage: `url(${rightArrow})` }} onClick = {incrementIndex}/>
             </div>
 
             <div className = "link-container">
