@@ -8,16 +8,20 @@
 
 .Choice-Definition {
     padding: 10px 40px;
-    background-color: rgb(147, 217, 195);
+    /* background-color: rgb(238, 255, 250); */
+    background-color: rgb(245, 255, 252);
 
     cursor: pointer;
     transition: background-color 0.5s ease;
     width: 567px; 
-    height: 104px;
+    /* height: 104px; */
 
-    font-size: 15px;
+    padding: 30px;
+    font-size: 1.25rem;
     font-weight: bolder;
     font-family: "DM Sans", sans-serif;
+    margin: 4px;
+    border: rgb(3, 142, 177) solid 1px;
 }
 
 .Choice-Definition:hover {
