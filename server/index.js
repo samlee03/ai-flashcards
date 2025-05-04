@@ -17,7 +17,7 @@ app.use(fileUpload())
 
 
 const ai = new GoogleGenAI({ apiKey: process.env.GENAI_API_KEY });
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 
 app.get('/', (req, res) => {
