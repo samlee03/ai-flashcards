@@ -34,8 +34,8 @@ function FlashCardPage(){
             </div>
 
             <div className = "link-container">
-                <Link to={"/"} className = "new-flashcard-button">Create New Flashcards</Link>
-                <Link to={"/quizpage"} className = "quiz-button" state = {{data}}>Test Yourself</Link>
+                <Link to={"/"} className = "navigation-button">Create New Flashcards</Link>
+                <Link to={"/quizpage"} className = "navigation-button" state = {{data}}>Test Yourself</Link>
             </div>
 
             <div className = "Key-Term-Container">
