@@ -1,0 +1,31 @@
+
+
+.Choice-Container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Choice-Definition {
+    padding: 10px 40px;
+    background-color: rgb(165, 196, 186);
+
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    width: 567px; 
+    height: 104px;
+
+    font-size: 15px;
+}
+
+.Choice-Definition:hover {
+    background-color: rgb(224, 55, 55);
+}
+
+#choice3 {
+    border-bottom-left-radius: 8px;
+}
+
+#choice4 {
+    border-bottom-right-radius: 8px;
+}
